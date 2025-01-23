@@ -5,6 +5,15 @@ VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudTrack.ApiGateway.WebAPI", "src\CloudTrack.ApiGateway.WebAPI\CloudTrack.ApiGateway.WebAPI.csproj", "{E33B4F6B-FC6F-4252-AAE0-9A2157B7505A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{7C96854F-0EAE-4ED7-8564-A0A2C3BD7C56}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{A56870FD-4593-450D-B196-FCD778B92270}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\.script-build-service-docker-image-and-push-into-acr.yml = .github\workflows\.script-build-service-docker-image-and-push-into-acr.yml
+		.github\workflows\.script-deploy-service-into-aca.yml = .github\workflows\.script-deploy-service-into-aca.yml
+		.github\workflows\build-and-deploy-to-aca-dev.yml = .github\workflows\build-and-deploy-to-aca-dev.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +27,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A56870FD-4593-450D-B196-FCD778B92270} = {7C96854F-0EAE-4ED7-8564-A0A2C3BD7C56}
 	EndGlobalSection
 EndGlobal
