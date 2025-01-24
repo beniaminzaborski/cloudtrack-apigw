@@ -14,6 +14,7 @@ Project is created with:
 * C#
 * .NET 9
 * YARP
+* Open Telemetry
 
 ## Repositories
 * Infrastructure: [github.com/beniaminzaborski/cloudtrack-infra](https://github.com/beniaminzaborski/cloudtrack-infra)
