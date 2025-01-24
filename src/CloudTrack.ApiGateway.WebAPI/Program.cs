@@ -1,12 +1,18 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
+using CloudTrack.ApiGateway.WebAPI;
+
+const string serviceName = "CloudTrack-ApiGateway";
+const string serviceVersion = "1.0.0";
 
 var builder = WebApplication.CreateBuilder(args);
+var services = builder.Services;
+var config = builder.Configuration;
 
-builder.Services.AddControllers();
-// Add the reverse proxy capability to the server
-builder.Services.AddReverseProxy()
-    // Initialize the reverse proxy from the "ReverseProxy" section of configuration
+services
+    .AddControllers();
+
+services
+    .AddObservability(config, serviceName, serviceVersion)
+    .AddReverseProxy()
     .LoadFromConfig(builder.Configuration.GetSection("ReverseProxy"));
 
 var app = builder.Build();
