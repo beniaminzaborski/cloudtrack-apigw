@@ -1,0 +1,34 @@
+@CloudTrack.ApiGateway.WebAPI_AzureHostAddress = https://ca-cloudtrack-apigw-dev.blackmoss-dfbfe33d.westeurope.azurecontainerapps.io
+
+GET {{CloudTrack.ApiGateway.WebAPI_AzureHostAddress}}/api/compet-svc/competition
+Accept: application/json
+
+###
+
+POST {{CloudTrack.ApiGateway.WebAPI_AzureHostAddress}}/api/compet-svc/competition
+Content-Type: application/json
+Accept: application/json
+
+
+{
+  "name": "Poznañ Marathon 2025",
+  "startAt": "2025-09-04T09:00:00.000Z",
+  "distance": {
+    "amount": 42.195,
+    "unit": "Kilometers"
+  },
+  "place": {
+    "city": "Poznañ",
+    "latitude": 0,
+    "longitute": 0
+  },
+  "maxCompetitors": 8500
+}
+
+###
+
+POST {{CloudTrack.ApiGateway.WebAPI_AzureHostAddress}}/api/compet-svc/competition/72077423-b405-49d0-bba3-b3edd7d9c41d/Registration/Open
+#Content-Type: application/json
+Accept: application/json
+
+###

@@ -1,22 +1,12 @@
 @CloudTrack.ApiGateway.WebAPI_HostAddress = http://localhost:5069
-@CloudTrack.ApiGateway.WebAPI_AzureHostAddress = https://ca-cloudtrack-apigw-dev.blackmoss-dfbfe33d.westeurope.azurecontainerapps.io
 
 GET {{CloudTrack.ApiGateway.WebAPI_HostAddress}}/api/compet-svc/competition
 Accept: application/json
 
 ###
 
-GET {{CloudTrack.ApiGateway.WebAPI_AzureHostAddress}}/api/compet-svc/competition
-Accept: application/json
-
-###
 
 GET {{CloudTrack.ApiGateway.WebAPI_HostAddress}}/api/regstr-svc/competitors
-Accept: application/json
-
-###
-
-GET {{CloudTrack.ApiGateway.WebAPI_AzureHostAddress}}/api/regstr-svc/competitors
 Accept: application/json
 
 ###
