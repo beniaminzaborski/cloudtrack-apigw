@@ -32,3 +32,8 @@ POST {{CloudTrack.ApiGateway.WebAPI_AzureHostAddress}}/api/compet-svc/competitio
 Accept: application/json
 
 ###
+
+GET {{CloudTrack.ApiGateway.WebAPI_AzureHostAddress}}/api/regstr-svc/competitor/72077423-b405-49d0-bba3-b3edd7d9c41d
+Accept: application/json
+
+###
