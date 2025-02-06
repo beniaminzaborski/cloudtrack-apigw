@@ -1,52 +1,53 @@
-@CloudTrack.ApiGateway.WebAPI_AzureHostAddress = https://ca-cloudtrack-apigw-dev.blackmoss-dfbfe33d.westeurope.azurecontainerapps.io
 
-GET {{CloudTrack.ApiGateway.WebAPI_AzureHostAddress}}/api/compet-svc/competition
+@ApiGatewayAzureHostAddress = https://ca-cloudtrack-apigw-dev.blackmoss-dfbfe33d.westeurope.azurecontainerapps.io
+
+GET {{ApiGatewayAzureHostAddress}}/api/compet-svc/competition
 Accept: application/json
 
 ###
 
-POST {{CloudTrack.ApiGateway.WebAPI_AzureHostAddress}}/api/compet-svc/competition
+POST {{ApiGatewayAzureHostAddress}}/api/compet-svc/competition
 Content-Type: application/json
 Accept: application/json
 
 
 {
-  "name": "Wroc³aw Marathon 2025",
+  "name": "InowrocÅ‚aw Marathon 2025",
   "startAt": "2025-09-04T09:00:00.000Z",
   "distance": {
     "amount": 42.195,
     "unit": "Kilometers"
   },
   "place": {
-    "city": "Wroc³aw",
+    "city": "Inowrocï¿½aw",
     "latitude": 0,
     "longitute": 0
   },
-  "maxCompetitors": 6000
+  "maxCompetitors": 4500
 }
 
 ###
 
-POST {{CloudTrack.ApiGateway.WebAPI_AzureHostAddress}}/api/compet-svc/competition/876b6af1-9321-490d-be5e-f44d22a3eb11/Registration/Open
+POST {{ApiGatewayAzureHostAddress}}/api/compet-svc/competition/95fc16c7-885b-4d93-99be-4e31ca538eb8/Registration/Open
 #Content-Type: application/json
 Accept: application/json
 
 ###
 
-GET {{CloudTrack.ApiGateway.WebAPI_AzureHostAddress}}/api/regstr-svc/competitor/876b6af1-9321-490d-be5e-f44d22a3eb11
+GET {{ApiGatewayAzureHostAddress}}/api/regstr-svc/competitor/95fc16c7-885b-4d93-99be-4e31ca538eb8
 Accept: application/json
 
 ###
 
-POST {{CloudTrack.ApiGateway.WebAPI_AzureHostAddress}}/api/regstr-svc/registration
+POST {{ApiGatewayAzureHostAddress}}/api/regstr-svc/registration
 Content-Type: application/json
 Accept: application/json
 
 
 {
-  "competitionId": "876b6af1-9321-490d-be5e-f44d22a3eb11",
-  "firstName": "John2",
-  "lastName": "Smithh3",
+  "competitionId": "95fc16c7-885b-4d93-99be-4e31ca538eb8",
+  "firstName": "JohnD",
+  "lastName": "SmithD",
   "birthDate": "1980-01-28T17:04:21.539Z",
   "city": "London",
   "phoneNumber": "123123123",

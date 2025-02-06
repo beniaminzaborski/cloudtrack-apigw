@@ -1,12 +1,12 @@
-@CloudTrack.ApiGateway.WebAPI_HostAddress = http://localhost:5069
+@ApiGatewayLocalHostAddress = http://localhost:5069
 
-GET {{CloudTrack.ApiGateway.WebAPI_HostAddress}}/api/compet-svc/competition
+GET {{ApiGatewayLocalHostAddress}}/api/compet-svc/competition
 Accept: application/json
 
 ###
 
 
-GET {{CloudTrack.ApiGateway.WebAPI_HostAddress}}/api/regstr-svc/competitors
+GET {{ApiGatewayLocalHostAddress}}/api/regstr-svc/competitors
 Accept: application/json
 
 ###
