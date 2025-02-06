@@ -19,7 +19,7 @@ Accept: application/json
     "unit": "Kilometers"
   },
   "place": {
-    "city": "Inowroc�aw",
+    "city": "Inowrocław",
     "latitude": 0,
     "longitute": 0
   },
