@@ -1,5 +1,5 @@
 
-@ApiGatewayAzureHostAddress = https://ca-cloudtrack-apigw-dev.blackmoss-dfbfe33d.westeurope.azurecontainerapps.io
+@ApiGatewayAzureHostAddress = https://ca-cloudtrack-apigw-demo.ashymeadow-313742fb.westeurope.azurecontainerapps.io
 
 GET {{ApiGatewayAzureHostAddress}}/api/compet-svc/competition
 Accept: application/json
